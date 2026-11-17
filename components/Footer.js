@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid w-[min(calc(100%-2rem),1200px)] gap-6 md:grid-cols-[1.4fr_0.8fr_0.8fr]">
         <div>
           <div className="inline-flex items-center gap-2.5 font-extrabold tracking-[-0.04em] text-white">
-            <span className="inline-flex h-[30px] w-[30px] items-center justify-center rounded-[10px] bg-gradient-to-br from-[#d93b2b] to-[#ff8b78] text-sm text-white shadow-[0_5px_16px_rgba(217,59,43,0.3)]" aria-hidden="true">S</span>
+            <Image src="/logo.png" alt="" aria-hidden="true" width={34} height={30} className="h-[30px] w-[34px] object-contain" />
             <span>SwiftAid</span>
           </div>
           <p className="mt-4 font-bold text-white/70">AI-Driven Emergency Coordination &amp; Dispatch System</p>

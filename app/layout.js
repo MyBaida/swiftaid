@@ -4,6 +4,9 @@ export const metadata = {
   title: "SwiftAid — AI-Driven Emergency Coordination & Dispatch System",
   description:
     "SwiftAid is an AI-driven emergency coordination and dispatch system developed as a final-year Computer Engineering project, combining AI, geospatial intelligence and real-time communication.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

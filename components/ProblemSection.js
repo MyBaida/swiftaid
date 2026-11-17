@@ -2,7 +2,7 @@ import { problemCards } from "@/lib/data";
 
 export default function ProblemSection() {
   return (
-    <section className="relative bg-white py-20 sm:py-24 lg:py-32" aria-labelledby="problem-title">
+    <section className="relative bg-[#f3f1ee] py-20 sm:py-24 lg:py-32" aria-labelledby="problem-title">
       <div className="mx-auto w-[min(calc(100%-2rem),1200px)]">
         <div className="mb-10 max-w-3xl sm:mb-14">
           <span className="mb-3 inline-block text-[0.72rem] font-extrabold tracking-[0.16em] text-[#981d13]">The challenge</span>
@@ -17,7 +17,7 @@ export default function ProblemSection() {
           {problemCards.map((card) => (
             <article className="group relative overflow-hidden rounded-[22px] border border-black/10 bg-gradient-to-b from-white to-[#f8f9fa] p-6 shadow-[0_12px_32px_rgba(14,19,29,0.04)] transition duration-300 ease-out hover:-translate-y-1.5 hover:border-[#d93b2b]/25 hover:shadow-[0_24px_48px_rgba(14,19,29,0.11)] sm:p-8" key={card.title}>
               <span className="absolute inset-y-0 left-0 w-[3px] origin-bottom scale-y-0 bg-gradient-to-b from-[#ff8b78] to-[#d93b2b] transition-transform duration-300 group-hover:scale-y-100" />
-              <span className="text-4xl font-black tracking-[-0.07em] text-[#d93b2b]/25">{card.number}</span>
+              <span className="text-5xl font-black tracking-[-0.07em] text-[#d93b2b]">{card.number}</span>
               <h3 className="mt-3 text-2xl font-semibold tracking-[-0.045em]">{card.title}</h3>
               <p className="mt-3 text-[#667085]">{card.text}</p>
             </article>

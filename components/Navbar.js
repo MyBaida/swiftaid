@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { navItems } from "@/lib/data";
 
 export default function Navbar() {
@@ -18,7 +19,7 @@ export default function Navbar() {
     <header className="fixed left-0 right-0 top-[18px] z-[100] max-[780px]:top-[10px]">
       <nav className={`mx-auto flex min-h-[72px] w-[min(calc(100%-2rem),1200px)] items-center rounded-[18px] border px-[18px] text-white backdrop-blur-[22px] [backdrop-filter:saturate(160%)] transition-all duration-300 max-[780px]:min-h-[62px] ${scrolled ? "border-white/20 bg-[rgba(22,25,32,0.58)] shadow-[0_18px_46px_rgba(3,7,12,0.3),inset_0_1px_0_rgba(255,255,255,0.08)]" : "border-white/20 bg-[linear-gradient(120deg,rgba(255,255,255,0.12),rgba(255,255,255,0.045)_48%,rgba(255,255,255,0.085)),rgba(24,27,34,0.4)] shadow-[0_18px_48px_rgba(3,7,12,0.24),inset_0_1px_0_rgba(255,255,255,0.12)]"}`} aria-label="Main navigation">
         <a className="inline-flex items-center gap-2.5 font-extrabold tracking-[-0.04em] text-white no-underline" href="#top" aria-label="SwiftAid home">
-          <span className="inline-flex h-[30px] w-[30px] items-center justify-center rounded-[10px] bg-gradient-to-br from-[#d93b2b] to-[#ff8b78] text-sm text-white shadow-[0_5px_16px_rgba(217,59,43,0.3)] transition duration-200 hover:rotate-[-8deg] hover:scale-110" aria-hidden="true">S</span>
+          <Image src="/logo.png" alt="" aria-hidden="true" width={34} height={30} className="h-[30px] w-[34px] object-contain transition duration-200 hover:rotate-[-8deg] hover:scale-110" />
           <span>SwiftAid</span>
         </a>
 

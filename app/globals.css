@@ -319,8 +319,9 @@ main { overflow: hidden; }
 
 /* Device stage for the app and admin screenshot showcases */
 .floating-card { border-color: rgba(255,255,255,0.14); box-shadow: 0 20px 48px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06); }
-.viewer-panel { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: clamp(18px, 3.5vw, 42px); overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius-xl); background: radial-gradient(ellipse at 50% 35%, rgba(217,59,43,0.075), transparent 47%), linear-gradient(145deg, #fff, #f5f6f8); box-shadow: var(--shadow); transition: box-shadow 280ms ease; }
-.viewer-panel:hover { box-shadow: 0 30px 74px rgba(21,28,37,0.16); }
+.viewer-panel { position: relative; display: grid; gap: 24px; padding: 0; }
+.viewer-panel::before { position: absolute; top: 50%; left: 50%; z-index: 0; width: min(600px, 85vw); height: min(620px, 100%); border-radius: 50%; background: radial-gradient(ellipse, rgba(217,59,43,0.13), transparent 68%); content: ""; filter: blur(12px); pointer-events: none; transform: translate(-50%, -50%); }
+.viewer-panel > * { position: relative; z-index: 1; }
 .viewer-main { display: grid; grid-template-columns: 56px minmax(0, 1fr) 56px; align-items: center; justify-items: center; gap: clamp(12px, 3vw, 36px); width: 100%; }
 .device-shell { position: relative; justify-self: center; transition: transform 360ms var(--ease-out), filter 360ms ease; }
 .device-shell:hover { filter: drop-shadow(0 24px 26px rgba(14,19,29,0.18)); }
@@ -342,7 +343,7 @@ main { overflow: hidden; }
 .viewer-frame:hover img { transform: scale(1.025); }
 
 @media (max-width: 780px) {
-  .viewer-panel { gap: 20px; padding: 20px 14px; }
+  .viewer-panel { gap: 20px; }
   .viewer-main { grid-template-columns: 38px minmax(0, 1fr) 38px; gap: 8px; }
   .device-phone { width: min(100%, 270px); border-radius: 40px; }
   .device-phone .viewer-frame { border-radius: 29px; }

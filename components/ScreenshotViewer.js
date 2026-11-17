@@ -27,7 +27,7 @@ export default function ScreenshotViewer() {
   const closeViewer = () => setIsFullscreen(false);
 
   return (
-    <section className="relative bg-white py-20 sm:py-24 lg:py-32" id="experience" aria-labelledby="experience-title">
+    <section className="relative bg-[#edf0f3] py-20 sm:py-24 lg:py-32" id="experience" aria-labelledby="experience-title">
       <div className="mx-auto w-[min(calc(100%-2rem),1200px)]">
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
           <span className="mb-3 inline-block text-[0.72rem] font-extrabold tracking-[0.16em] text-[#981d13]">Experience SwiftAid</span>

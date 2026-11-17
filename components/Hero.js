@@ -83,9 +83,9 @@ export default function Hero() {
             <Link href="#experience" className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-gradient-to-br from-[#d93b2b] to-[#f16654] px-6 text-sm font-bold text-white shadow-[0_16px_26px_rgba(217,59,43,0.25)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_34px_rgba(217,59,43,0.38)]">
               Explore SwiftAid
             </Link>
-            <Link href="#how-it-works" className="inline-flex min-h-[52px] items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-bold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10">
-              View Project Details
-            </Link>
+            <a href="https://drive.google.com/file/d/1UbyLIwFOy9aOIGU9g1ydvFB8fdhj3m9O/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[52px] items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-bold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10">
+              Read Full Thesis
+            </a>
           </div>
 
           <div className="mt-5 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs text-white/75" aria-label="Project status">
